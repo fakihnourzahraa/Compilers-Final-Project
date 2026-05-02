@@ -10,7 +10,7 @@
 # include "../minishell.h"
 # include "../libft/libft.h"
 # include "../builtins/builtin.h"
-# include "../exec/exec.h"
+# include "../Semantic_Analysis/exec/exec.h"
 # include "../env/env.h"
 
 extern int	g_signal;

@@ -21,8 +21,8 @@
 # include "main/main.h"
 # include "builtins/builtin.h"
 # include "env/env.h"
-# include "exec/exec.h"
-# include "expansion/expansion.h"
+# include "Semantic_Analysis/exec/exec.h"
+# include "Semantic_Analysis/expansion/expansion.h"
 
 typedef struct s_token	t_token;
 typedef struct s_cmd	t_cmd;

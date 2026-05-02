@@ -18,36 +18,36 @@ SRCS = main/main.c \
        builtins/export.c \
        builtins/unset.c \
        builtins/builutils.c \
-       exec/exec_built.c \
-       exec/buitl.c \
-       exec/execute_single.c \
-       exec/execute_path.c \
-       exec/utilsexec.c \
-       exec/redirection.c \
-       exec/clean.c \
-       exec/redir_utils.c \
-       exec/heredoc.c \
-       exec/heredoc_util.c \
-       exec/heredoc_util2.c \
-       exec/redirecttion_utils.c \
-       exec/exec_single_help.c \
-       exec/exec_single_help2.c \
-       exec/multcmnd.c \
-       exec/pipeline.c \
-       exec/pipeline2.c \
-       exec/utils2exec.c \
-       exec/pipeutils.c \
-       exec/exec_pip.c \
-       exec/input_redr.c \
-       exec/output_redr.c \
+       Semantic_Analysis/exec/exec_built.c \
+       Semantic_Analysis/exec/buitl.c \
+       Semantic_Analysis/exec/execute_single.c \
+       Semantic_Analysis/exec/execute_path.c \
+       Semantic_Analysis/exec/utilsexec.c \
+       Semantic_Analysis/exec/redirection.c \
+       Semantic_Analysis/exec/clean.c \
+       Semantic_Analysis/exec/redir_utils.c \
+       Semantic_Analysis/exec/heredoc.c \
+       Semantic_Analysis/exec/heredoc_util.c \
+       Semantic_Analysis/exec/heredoc_util2.c \
+       Semantic_Analysis/exec/redirecttion_utils.c \
+       Semantic_Analysis/exec/exec_single_help.c \
+       Semantic_Analysis/exec/exec_single_help2.c \
+       Semantic_Analysis/exec/multcmnd.c \
+       Semantic_Analysis/exec/pipeline.c \
+       Semantic_Analysis/exec/pipeline2.c \
+       Semantic_Analysis/exec/utils2exec.c \
+       Semantic_Analysis/exec/pipeutils.c \
+       Semantic_Analysis/exec/exec_pip.c \
+       Semantic_Analysis/exec/input_redr.c \
+       Semantic_Analysis/exec/output_redr.c \
        env/envir.c \
        env/envir2.c \
        env/envir3.c \
        env/envir.utils.c \
-       expansion/expansion.c \
-       expansion/expand_var.c \
-       expansion/trim.c \
-       expansion/replace_var.c \
+       Semantic_Analysis/expansion/expansion.c \
+       Semantic_Analysis/expansion/expand_var.c \
+       Semantic_Analysis/expansion/trim.c \
+       Semantic_Analysis/expansion/replace_var.c \
        Lexical_Analysis/data_structure.c \
        Lexical_Analysis/edge.c \
        Syntax_Analysis/parsing.c \
@@ -58,8 +58,8 @@ SRCS = main/main.c \
        Lexical_Analysis/token_helpers.c \
        Lexical_Analysis/token.c \
        cleanup.c \
-       expansion/split_help.c\
-       expansion/segments.c\
+       Semantic_Analysis/expansion/split_help.c\
+       Semantic_Analysis/expansion/segments.c\
        cleanup_two.c
 
 OBJS = $(SRCS:.c=.o)

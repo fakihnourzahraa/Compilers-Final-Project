@@ -5,7 +5,7 @@
 # include "../minishell.h"
 # include "../libft/libft.h"
 # include "../env/env.h"
-# include "../exec/exec.h"
+# include "../Semantic_Analysis/exec/exec.h"
 
 void	builtin_echo(t_cmd *cmd, t_shell *shell);
 void	builtin_pwd(t_cmd *cmd, t_shell *shell);
