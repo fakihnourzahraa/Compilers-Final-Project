@@ -6,7 +6,7 @@
 /*   By: nour <nour@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/13 12:45:13 by nfakih            #+#    #+#             */
-/*   Updated: 2025/10/26 11:19:55 by nour             ###   ########.fr       */
+/*   Updated: 2026/05/02 22:46:47 by nour             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,45 +65,3 @@ void	empty_token(char *a, t_shell *shell, int i)
 //shell->tkns->quotes = (a[z] % 3) + 1;
 // is its single quote it'll be 0 + 1 else 1 + 1
 
-void	add_cmd(t_shell *shell, t_cmd *cmd)
-{
-	t_cmd	*cur;
-
-	if (!shell->cmds)
-		shell->cmds = cmd;
-	else
-	{
-		cur = shell->cmds;
-		while (cur->next)
-			cur = cur->next;
-		cur->next = cmd;
-	}
-}
-
-t_cmd	*init_cmd(t_token *t)
-{
-	int		wc;
-	int		i;
-	t_cmd	*cmd;
-
-	wc = word_count_p(t);
-	cmd = malloc(sizeof(t_cmd));
-	cmd->args = malloc(sizeof(char *) * (wc + 1));
-	cmd->space = malloc(sizeof(int) * (wc + 1));
-	cmd->path = NULL;
-	cmd->rd = NULL;
-	cmd->i_fd = STDIN_FILENO;
-	cmd->o_fd = STDOUT_FILENO;
-	cmd->pid = -1;
-	cmd->builtin = NOT_BUILTIN;
-	cmd->next = NULL;
-	cmd->cmd = NULL;
-	i = 1;
-	while (i < (wc + 1))
-	{
-		cmd->args[i] = NULL;
-		cmd->space[i] = 1;
-		i++;
-	}
-	return (cmd);
-}

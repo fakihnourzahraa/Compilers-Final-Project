@@ -59,14 +59,15 @@ SRCS = main/main.c \
        expansion/expand_var.c \
        expansion/trim.c \
        expansion/replace_var.c \
-       tokenization/data_structure.c \
-       tokenization/edge.c \
-       tokenization/parsing.c \
-       tokenization/redir.c \
-       tokenization/splits.c \
-       tokenization/chars.c \
-       tokenization/token_helpers.c \
-       tokenization/token.c \
+       Lexical_Analysis/data_structure.c \
+       Lexical_Analysis/edge.c \
+       Syntax_Analysis/parsing.c \
+       Syntax_Analysis/redir.c \
+       Syntax_Analysis/cmds.c \
+       Lexical_Analysis/splits.c \
+       Lexical_Analysis/chars.c \
+       Lexical_Analysis/token_helpers.c \
+       Lexical_Analysis/token.c \
        cleanup.c \
        expansion/split_help.c\
        expansion/segments.c\

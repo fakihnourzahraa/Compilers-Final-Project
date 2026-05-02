@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   redir.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nfakih <nfakih@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nour <nour@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/24 11:24:09 by nfakih            #+#    #+#             */
-/*   Updated: 2025/10/24 13:36:33 by nfakih           ###   ########.fr       */
+/*   Updated: 2026/05/02 22:50:31 by nour             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tokenization.h"
+#include "syntax_analysis.h"
 
 void	add_redir(t_cmd *cmds, t_redir *c)
 {

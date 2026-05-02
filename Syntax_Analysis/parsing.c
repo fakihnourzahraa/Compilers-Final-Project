@@ -6,11 +6,12 @@
 /*   By: nour <nour@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/04 22:53:52 by nour              #+#    #+#             */
-/*   Updated: 2025/10/17 13:53:33 by nour             ###   ########.fr       */
+/*   Updated: 2026/05/02 22:50:22 by nour             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tokenization.h"
+#include "syntax_analysis.h"
+
 
 int	parse_word(t_token **t, t_cmd *cmd, int i)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   minishell.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nfakih <nfakih@student.42.fr>              +#+  +:+       +#+        */
+/*   By: nour <nour@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 16:10:17 by nour              #+#    #+#             */
-/*   Updated: 2025/10/24 12:10:47 by nfakih           ###   ########.fr       */
+/*   Updated: 2026/05/02 22:49:04 by nour             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@
 # include <errno.h>
 # include "struct.h"
 # include "libft/libft.h"
-# include "tokenization/tokenization.h"
+# include "Lexical_Analysis/tokenization.h"
+# include "Syntax_Analysis/syntax_analysis.h"
 # include "main/main.h"
 # include "builtins/builtin.h"
 # include "env/env.h"
