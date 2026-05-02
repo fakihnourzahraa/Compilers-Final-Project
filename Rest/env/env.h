@@ -2,7 +2,7 @@
 #ifndef ENV_H
 # define ENV_H
 
-# include "../minishell.h"
+# include "../../minishell.h"
 # include "../libft/libft.h"
 
 t_env	*init_env_from_envp(char **envp);

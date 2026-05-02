@@ -15,12 +15,12 @@
 # include <readline/history.h>
 # include <errno.h>
 # include "struct.h"
-# include "libft/libft.h"
+# include "Rest/libft/libft.h"
 # include "Lexical_Analysis/tokenization.h"
 # include "Syntax_Analysis/syntax_analysis.h"
 # include "main/main.h"
-# include "builtins/builtin.h"
-# include "env/env.h"
+# include "Rest/builtins/builtin.h"
+# include "Rest/env/env.h"
 # include "Semantic_Analysis/exec/exec.h"
 # include "Semantic_Analysis/expansion/expansion.h"
 

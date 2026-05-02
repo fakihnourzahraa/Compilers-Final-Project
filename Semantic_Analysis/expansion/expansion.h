@@ -1,7 +1,7 @@
 
 #ifndef EXPANSION_H
 # define EXPANSION_H
-# include "../minishell.h"
+# include "../../minishell.h"
 # include "../libft/libft.h"
 # include "../env/env.h"
 

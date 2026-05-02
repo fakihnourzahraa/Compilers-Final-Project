@@ -2,11 +2,11 @@
 #ifndef EXEC_H
 # define EXEC_H
 
-# include "../minishell.h"
+# include "../../minishell.h"
 # include "../libft/libft.h"
 # include "../builtins/builtin.h"
 # include "../env/env.h"
-# include "../main/main.h"
+# include "../../main/main.h"
 # include "../expansion/expansion.h"
 # include <fcntl.h>
 # include <sys/stat.h>

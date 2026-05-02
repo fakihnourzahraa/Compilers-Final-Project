@@ -3,21 +3,21 @@ NAME = minishell
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-LIBFT_DIR = libft
+LIBFT_DIR = Rest/libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
 SRCS = main/main.c \
        main/signal.c \
        main/processing.c \
-       builtins/echo.c \
-       builtins/pwd.c \
-       builtins/exit.c \
-       builtins/cd.c \
-       builtins/env.c \
-       builtins/envhelp.c \
-       builtins/export.c \
-       builtins/unset.c \
-       builtins/builutils.c \
+       Rest/builtins/echo.c \
+       Rest/builtins/pwd.c \
+       Rest/builtins/exit.c \
+       Rest/builtins/cd.c \
+       Rest/builtins/env.c \
+       Rest/builtins/envhelp.c \
+       Rest/builtins/export.c \
+       Rest/builtins/unset.c \
+       Rest/builtins/builutils.c \
        Semantic_Analysis/exec/exec_built.c \
        Semantic_Analysis/exec/buitl.c \
        Semantic_Analysis/exec/execute_single.c \
@@ -40,10 +40,10 @@ SRCS = main/main.c \
        Semantic_Analysis/exec/exec_pip.c \
        Semantic_Analysis/exec/input_redr.c \
        Semantic_Analysis/exec/output_redr.c \
-       env/envir.c \
-       env/envir2.c \
-       env/envir3.c \
-       env/envir.utils.c \
+       Rest/env/envir.c \
+       Rest/env/envir2.c \
+       Rest/env/envir3.c \
+       Rest/env/envir.utils.c \
        Semantic_Analysis/expansion/expansion.c \
        Semantic_Analysis/expansion/expand_var.c \
        Semantic_Analysis/expansion/trim.c \
