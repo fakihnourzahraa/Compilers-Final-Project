@@ -1,8 +1,6 @@
 # Compilers-Final-Project
-# Minishell — A Bash-Based Shell Interpreter
-> Compiler Design Project 
+ Minishell — A Bash-Based Shell Interpreter
 
----
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
@@ -16,7 +14,7 @@
 6. [How to Build & Run](#how-to-build--run)
 7. [Examples](#examples)
 
----
+
 
 ## Project Overview
 
@@ -134,42 +132,6 @@ $ cd /nonexistent    # directory doesn't exist → "No such file or directory"
 $ export 1BAD=val    # invalid identifier → rejected silently
 ```
 
----
-
-## Project Structure
-
-```
-Minishell/
-├── Lexical_Analysis/       # Tokenizer: splits input into tokens
-│   ├── token.c             # Token initialization and addition
-│   ├── splits.c            # Word and quote splitting logic
-│   ├── chars.c             # Operator character detection
-│   ├── edge.c              # Syntax error helpers
-│   ├── parsing.c           # Token → t_cmd conversion
-│   ├── redir.c             # Redirection token attachment
-│   └── data_structure.c    # t_cmd and t_token constructors
-│
-├── Syntax_Analysis/        # Token validation and command building
-│   └── (check_tkns, parse, iterate_token)
-│
-├── Semantic_Analysis/      # Expansion + execution
-│   └── (expand_var, replace_var, trim, expansion_main)
-│
-├── Rest/
-│   ├── builtins/           # echo, cd, pwd, export, unset, env, exit
-│   ├── env/                # Environment linked-list management
-│   ├── exec/               # Pipeline execution, fork/execve, redirections
-│   └── libft/              # Custom C standard library
-│
-├── main/                   # Entry point, main loop, input processing
-├── minishell.h             # Global header — all type definitions
-├── struct.h                # t_shell, t_cmd, t_token, t_redir, t_env structs
-├── cleanup.c               # Memory cleanup functions
-└── Makefile
-```
-
----
-
 ## Features
 
 - Interactive prompt with command history (via `readline`)
@@ -181,7 +143,7 @@ Minishell/
 - 7 built-in commands: `echo -n`, `cd`, `pwd`, `export`, `unset`, `env`, `exit`
 - Proper exit status propagation throughout pipelines
 
----
+
 
 ## How to Build & Run
 
@@ -198,13 +160,6 @@ make
 ```
 
 **Dependencies:** `gcc`, `make`, `libreadline-dev`
-
-```bash
-# Install readline on Ubuntu/Debian
-sudo apt-get install libreadline-dev
-```
-
----
 
 ## Examples
 
@@ -239,7 +194,6 @@ minishell$ echo $?
 2
 ```
 
----
 
 ## Compilation Pipeline Diagram
 
